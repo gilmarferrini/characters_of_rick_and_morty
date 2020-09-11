@@ -1,21 +1,24 @@
 import React from 'react';
 
 import { DetailsContainer } from './styles';
+import Header from '../../components/Header';
 
 const Details: React.FC = () => {
   return (
     <DetailsContainer>
-      <h1>Personagem: Rick Sanchez</h1>
+      <Header />
+
       <img
-        src="https://rickandmortyapi.com/api/character/avatar/10.jpeg"
-        alt="Foto de Rick Sanchez"
+        src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+        alt="Imagem de Rick Sanchez"
       />
 
       <section>
+        <h2>Rick Sanchez</h2>
         <p>Status: Vivo</p>
         <p>Espécie: Humano</p>
         <p>Sexo: Masculino</p>
-        <p>Tipo: Superhuman (Ghost trains summoner)</p>
+        <p>Aparições em Episódios: 40</p>
       </section>
     </DetailsContainer>
   );

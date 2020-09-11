@@ -1,21 +1,46 @@
 import styled from 'styled-components';
 
 export const DetailsContainer = styled.main`
-  width: 100%;
-  text-align: center;
-
-  h1 {
-    margin: 1rem;
-  }
   img {
-    width: 80%;
-    height: 20rem;
-    border-radius: 0.4rem;
+    width: 100%;
+    height: 243px;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
   }
 
-  section p {
-    font-size: 1.2rem;
-    color: #ffffff;
-    padding: 0.4rem;
+  section {
+    width: 100%;
+    height: 10rem;
+    background: #000000;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      margin: 1rem;
+    }
+
+    p {
+      color: #ffffff;
+      line-height: 1.4rem;
+    }
+  }
+
+  @media (max-width: 780px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img,
+    section {
+      width: 90%;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
   }
 `;

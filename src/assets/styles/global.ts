@@ -10,7 +10,7 @@ export default createGlobalStyle`
 
   body {
     font: 16px Roboto, sans-serif;
-    background: #050517;
+    background: #161925;
     width: 100vw;
     min-height: 100vh;
   }
@@ -26,16 +26,11 @@ export default createGlobalStyle`
   }
 
   #app {
-    width: 70vw;
+    max-width: 820px;
     min-height: 100vh;
-    background: #050517;
     border-radius: 1rem;
 
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     a {
       text-decoration: none;
