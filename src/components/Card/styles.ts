@@ -29,7 +29,7 @@ export const CardContainer = styled.div`
   }
 
   span {
-    width: 80px;
+    min-width: 80px;
     height: 40px;
     background: #235789;
     display: flex;
@@ -39,9 +39,20 @@ export const CardContainer = styled.div`
     margin-top: 1rem;
 
     > a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 0.4rem;
       font-size: 1rem;
       font-weight: bold;
       color: #ffffff;
+
+      svg {
+        height: 1rem;
+        width: 2rem;
+        margin-left: 0.4rem;
+      }
     }
   }
 

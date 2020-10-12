@@ -10,13 +10,14 @@ export const DetailsContainer = styled.main`
 
   section {
     width: 100%;
-    height: 10rem;
+    min-height: 10rem;
     background: #000000;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 
     h2 {
       margin: 1rem;
@@ -43,4 +44,34 @@ export const DetailsContainer = styled.main`
       margin-bottom: 2rem;
     }
   }
+`;
+
+export const MoreDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h3 {
+    margin: 1rem 0;
+  }
+
+  button {
+    padding: 0.3rem 0.5rem;
+    margin-left: 0.4rem;
+    border-radius: 0.4rem;
+    outline: 0ch;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: #235789;
+  }
+`;
+
+
+export const MoreDetailsContent = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;

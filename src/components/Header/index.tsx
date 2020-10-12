@@ -2,10 +2,10 @@ import React from 'react';
 
 import { HeaderContainer } from './styles';
 
-const Header: React.FC = () => {
+const Header: React.FC = ({children}) => {
   return (
     <HeaderContainer>
-      <a href="/">Home</a>
+      {children}
     </HeaderContainer>
   );
 };

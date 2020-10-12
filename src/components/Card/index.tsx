@@ -1,22 +1,33 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
+import { AiOutlineRead } from 'react-icons/ai';
 import { CardContainer } from './styles';
 
-const Card: React.FC = () => (
-  <CardContainer>
-    <section>
-      <img
-        src="https://rickandmortyapi.com/api/character/avatar/10.jpeg"
-        alt="Foto de Rick Sanchez"
-      />
-    </section>
-    <section>
-      <h2>Alan Rails</h2>
-      <span>
-        <a href="/characters/id">Detalhes</a>
-      </span>
-    </section>
-  </CardContainer>
-);
+interface CardData {
+  id: number;
+  name: string;
+  image: string;
+}
+
+const Card: React.FC<CardData> = props => {
+  const { id, name, image } = props;
+  return (
+    <CardContainer>
+      <section>
+        <img src={image} alt={`Foto de ${name}`} />
+      </section>
+      <section>
+        <h2>{name}</h2>
+        <span>
+          <a href={`/characters/${id}`}>
+            Detalhes
+            <AiOutlineRead />
+          </a>
+        </span>
+      </section>
+    </CardContainer>
+  );
+};
 
 export default Card;
