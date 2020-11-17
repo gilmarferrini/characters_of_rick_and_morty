@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const CharactersContainer = styled.main`
   width: 100%;
   text-align: center;
@@ -9,6 +10,7 @@ export const Cards = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0.4rem;
+  width: 100%;
 
   h1 {
     margin: 1rem 0;
@@ -18,7 +20,7 @@ export const Cards = styled.div`
     margin: 0.3rem;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
